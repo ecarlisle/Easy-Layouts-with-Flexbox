@@ -1,0 +1,32 @@
+{
+  "name": "Ridiculously Easy Layouts with Flexbox",
+  "version": "0.0.0",
+  "main": "index.html",
+  "authors": [
+    "Eric Carlisle <eric@ericcarlisle.com>"
+  ],
+  "description": "The Flexbox (or Flexible Box) Layout Model is a set of CSS attributes allowing for the efficient creation of robust, multi-screen application layouts. Flexbox uses a dual-axis container/item layout model allowing for powerful approaches to element space distribution, alignment, and sizing. This can be a tremendous boon for web projects with dynamic data and design flux. It may also tremendously simplify responsive layouts that are dependent on commonly complicated grid models.",
+  "keywords": [
+    "Flexbox"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.ericcarlisle.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.2"
+  },
+  "install" : {
+    "path" : {
+      "css": "assets/css",
+      "js": "assets/js"
+    }
+  }
+}
