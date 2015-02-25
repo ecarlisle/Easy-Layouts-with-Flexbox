@@ -1,0 +1,46 @@
+.container {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  color: #FFF;
+  font-family: 'Architects Daughter', sans-serif;
+  padding: 0 20px;
+}
+
+nav {
+  color: #FFF;
+  font-family: 'Architects Daughter', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 5px 0;
+  padding: 5px 0;
+  border-top: 1px solid #fff;
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg-blue {
+  background: url('../img/bg.png');
+}
