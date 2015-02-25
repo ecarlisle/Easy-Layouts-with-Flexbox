@@ -11,26 +11,85 @@
       <link rel="stylesheet" href="assets/css/site.css">
       <style type="text/css">
 
+
+        .container {
+          margin: 0 auto;
+        }
+
+        @media screen and (min-width: 768px) {
+          .container {
+            width: 750px;
+          }
+        }
+
+        @media screen and (min-width: 992px) {
+          .container {
+            width: 970px;
+          }
+        }
+
+        @media screen and (min-width: 1200px) {
+          .container {
+            width: 1170px;
+          }
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        header, nav {
+          color: #FFF;
+          font-family: 'Architects Daughter', sans-serif;
+          padding: 0 10px;
+        }
+
+        nav {
+          display: flex;
+        }
+
+        nav a {
+          color: #FFF;
+          text-decoration: none;
+        }
+
+        nav ul {
+          list-style-type: none;
+        }
+
+        nav ul li {
+          display: inline-block;
+        }
+
+        .bg-blue {
+          background: url('assets/img/bg.png');
+        }
+
       </style>
     </head>
     <body>
-        <header>
+      <div class="bg-blue">
+        <header class="container">
           <h1>Guy Incognito</h1>
           <p class="tag-line">I am a UI Developer.</p>
-          <nav id="nav-top">
-            <ul>
-              <li><a href="#what-i-do">What I Do</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#social">Social</a></li>
-            </ul>
-          </nav>
-      </header>
-      <main>
+        </header>
+        <nav class="container">
+          <ul>
+            <li><a href="#what-i-do">What I Do</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social</a></li>
+          </ul>
+        </nav>
+    </div>
+    <main>
 
-      </main>
+    </main>
+    <div class="bg-blue">
       <footer>
 
       </footer>
-    </body>
+    </div>
+  </body>
 </html>
