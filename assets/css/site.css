@@ -8,13 +8,26 @@ body {
 }
 
 h1 {
+  font-size: 40px;
+  line-height: 0.9;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
   margin: 0;
 }
 
 header {
   color: #FFF;
   font-family: 'Architects Daughter', sans-serif;
-  padding: 0 20px;
+  padding: 20px 20px 10px;
+  text-align: center;
+}
+
+header span {
+  color: #8fbae5;
+  font-size: 24px;
 }
 
 nav {
@@ -30,8 +43,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 5px 0;
-  padding: 5px 0;
+  padding: 0 20px;
   border-top: 1px solid #fff;
 }
 
@@ -44,3 +56,5 @@ nav ul li a {
 .bg-blue {
   background: url('../img/bg.png');
 }
+
+

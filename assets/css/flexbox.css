@@ -1,19 +1,17 @@
 nav ul {
-	display: flex;
- 	flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
 
-  .container {
+  header, nav, main, footer {
     width: 750px;
   }
 
   nav ul {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
   }
   nav ul li {
-    flex-grow: 1;
     border: 0;
   }
 
@@ -21,7 +19,7 @@ nav ul {
 
 @media screen and (min-width: 992px) {
 
-  .container {
+  header, nav, main, footer {
     width: 970px;
   }
 
@@ -30,14 +28,13 @@ nav ul {
   }
 
   nav ul li {
-    flex-grow: 0;
     margin: 10px;
   }
 
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  header, nav, main, footer {
     width: 1170px;
   }
 }
