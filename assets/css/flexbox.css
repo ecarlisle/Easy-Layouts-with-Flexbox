@@ -1,40 +1,52 @@
-nav ul {
-}
+  .social {
+    display: flex;
+    flex-wrap: wrap;
 
-@media screen and (min-width: 768px) {
-
-  header, nav, main, footer {
-    width: 750px;
   }
+
+  .social a {
+    flex-basis: 10rem;
+  }
+
+
+
+ @media screen and (min-width: 768px) {
 
   nav ul {
     display: flex;
     justify-content: space-around;
   }
+
+
+  /* Workaround for Chrome (bug) */
+  /*
   nav ul li {
-    border: 0;
+    grow: 1;
   }
+  */
 
 }
 
 @media screen and (min-width: 992px) {
 
-  header, nav, main, footer {
-    width: 970px;
-  }
 
   nav ul {
     justify-content: flex-end;
   }
 
+  /* Workaround for Chrome (bug) */
+  /*
   nav ul li {
-    margin: 10px;
+    grow: 0;
+  }
+  */
+
+  .flex-container {
+    display: flex;
   }
 
 }
 
 @media screen and (min-width: 1200px) {
-  header, nav, main, footer {
-    width: 1170px;
-  }
+
 }

@@ -7,17 +7,20 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Architects+Daughter' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="css/normalize.css/normalize.css">
-      <link rel="stylesheet" href="assets/css/site.css">
+      <link rel="stylesheet" href="assets/css/normalize.css/normalize.css">
       <link rel="stylesheet" href="assets/css/flexbox.css">
+      <!--
+      <link rel="stylesheet" href="assets/css/debug.css">
+      -->
+      <link rel="stylesheet" href="assets/css/site.css">
     </head>
     <body>
-      <div class="bg-blue">
-        <header class="container">
-          <h1>Randall Stevens</h1>
-          <span>I am a UI Geek.</span>
-        </header>
-        <nav class="container">
+      <header>
+        <h1>Randall Stevens</h1>
+        <span>I am a UI Geek.</span>
+      </header>
+      <div class="nav-wrapper">
+        <nav>
           <ul>
             <li><a href="#what-i-do">What I Do</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -25,14 +28,64 @@
             <li><a href="#social">Social</a></li>
           </ul>
         </nav>
-    </div>
-    <main>
+      </div>
+      <main>
+      <article>
 
+      </article>
+
+
+
+
+      <article>
+        <h2>What I Do</h2>
+        <div class="flex-container">
+          <section>
+            <h3>User Interface Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl odio. In in neque pellentesque elit ullamcorper volutpat. In ultrices condimentum massa fringilla vehicula. Nulla facilisi. Fusce sit amet leo interdum, rutrum ipsum ac, scelerisque turpis. Sed finibus, mauris id sagittis ultrices, odio nisl dictum erat, et volutpat justo velit nec urna. Morbi suscipit risus at quam scelerisque.
+            </p>
+          </section>
+          <section>
+            <h3>User Experience Design</h3>
+            <p>
+              Sed porta imperdiet magna, a tempor quam hendrerit sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque hendrerit sit amet felis sit amet mattis. Ut vitae mi non velit viverra imperdiet ac et erat. Phasellus interdum elit et cursus facilisis. Nulla libero lectus, iaculis nec consectetur vel, vestibulum et arcu. 
+            </p>
+          </section>
+          <section>
+            <h3>Search Engine Optimization</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl odio. In in neque pellentesque elit ullamcorper volutpat. In ultrices condimentum massa fringilla vehicula. Nulla facilisi. Fusce sit amet leo interdum, rutrum ipsum ac, scelerisque turpis. Sed finibus, mauris id sagittis ultrices, odio nisl dictum erat, et volutpat justo velit nec urna. Morbi suscipit risus at quam scelerisque pretium nec.
+            </p>
+          </section>
+        </div>
+      </article>
+      <article>
+        <section>
+        <h2>Social</h2>
+          <div class="flex-container social">
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <!--
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            <a href="#"><img class="social-icon" src="assets/img/stack-exchange.png" alt="Stack Exchange" title="Stack Exchange" /></a>
+            -->
+          </div>
+        </section>
+      </article>
     </main>
-    <div class="bg-blue">
+    <div class="bg-blue-pattern">
       <footer>
-
+      &copy; 2015 Randall Stevens, All Rights Reserved
       </footer>
     </div>
   </body>
 </html>
+<!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
+<!-- Divs are now just for additional formatting not pertaining to content -->
+<!-- Div - generic container -->
