@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+      <title>Bar Chart Example</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/normalize.css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bar-chart.css">
+
+      <style type="text/css">
+        body {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .row {
+          display: flex;
+          /* flex-direction: row; */
+        }
+
+        .column {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .chart-body {
+          height: 400px;
+          width: 400px;
+          border: solid 1px #333;
+          border-width: 0 0 1px 1px;
+
+          display: flex;
+
+          align-items: flex-end;
+
+          justify-content: space-around;
+
+        }
+
+        .bar {
+          width: 50px;
+          color: white;
+        }
+
+        .bar>div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .y-axis {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .y-tic {
+          height: 49px;
+          width: 10px;
+          border-top: solid 1px #333;
+          padding-right: 15px;
+          line-height: 2;
+          text-align: right;
+        }
+
+        .x-axis {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-around;
+          padding-top: 10px;
+        }
+
+      </style>
+
+
+    </head>
+    <body style="background: #FFF">
+
+    <div class="chart">
+
+      <h1>Bar Chart Example</h1>
+
+      <div class="row">
+        <div class="y-axis">
+          <div class="y-tic">400</div>
+          <div class="y-tic">350</div>
+          <div class="y-tic">300</div>
+          <div class="y-tic">250</div>
+          <div class="y-tic">200</div>
+          <div class="y-tic">150</div>
+          <div class="y-tic">100</div>
+          <div class="y-tic">50</div>
+          <div class="y-tic">0</div>
+        </div>  
+
+        <div class="column" style="solid 1px red">
+          <div class="chart-body"> <!-- 1 -->
+            <div class="bar"><!-- 2 -->
+              <div>300</div>
+              <div class="bg-red" style="height: 100px">100</div>
+              <div class="bg-yellow" style="height: 100px">100</div>
+              <div class="bg-green" style="height: 100px">100</div>
+            </div>
+
+            <div class="bar">
+              <div class="bg-red" style="height: 50px">50</div>
+              <div class="bg-yellow" style="height: 50px">50</div>
+              <div class="bg-green" style="height: 50px">50</div>
+            </div>
+
+            <div class="bar">
+              <div class="bg-red" style="height: 125px">125</div>
+              <div class="bg-yellow" style="height: 125px">125</div>
+              <div class="bg-green" style="height: 125px">125</div>
+            </div>
+
+            <div class="bar">
+              <div class="bg-red" style="height: 75px">75</div>
+              <div class="bg-yellow" style="height: 75px">75</div>
+              <div class="bg-green" style="height: 75px">75</div>
+            </div><!-- /2 -->
+          </div><!--- /1 -->
+
+            <!-- Options - child order or row-reverse -->
+            <div class="x-axis">
+              <div class="x-label">2015</div>
+              <div class="x-label">2014</div>
+              <div class="x-label">2013</div>
+              <div class="x-label">2012</div>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </body>
+</html>
+<!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
+<!-- Divs are now just for additional formatting not pertaining to content -->
+<!-- Div - generic container -->

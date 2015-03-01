@@ -1,0 +1,16 @@
+body {
+  padding-top: 30px;
+  font: 12px sans-serif;
+}
+
+h1 {
+  font: bold 20px sans-serif;
+}
+
+.chart {
+  text-align: center;
+}
+
+.bg-red {background: #c83333}
+.bg-yellow {background: #c8aa33}
+.bg-green {background: #2baa2b}
