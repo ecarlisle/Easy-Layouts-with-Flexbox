@@ -1,12 +1,16 @@
-  .social {
-    display: flex;
-    flex-wrap: wrap;
+header, nav, article, footer {
+  margin: 0 auto;
+} 
 
-  }
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .social a {
-    flex-basis: 10rem;
-  }
+.social a {
+  justify-content: space-between;
+}
 
 
 
@@ -14,16 +18,11 @@
 
   nav ul {
     display: flex;
-    justify-content: space-around;
   }
 
 
-  /* Workaround for Chrome (bug) */
-  /*
-  nav ul li {
-    grow: 1;
-  }
-  */
+  /* Workaround for Chrome bug */
+  /* nav ul li { grow: 1; }*/
 
 }
 
@@ -35,11 +34,7 @@
   }
 
   /* Workaround for Chrome (bug) */
-  /*
-  nav ul li {
-    grow: 0;
-  }
-  */
+  /* nav ul li { grow: 0; } */
 
   .flex-container {
     display: flex;

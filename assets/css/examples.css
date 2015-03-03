@@ -1,0 +1,74 @@
+h1 {
+	margin: 0 0 2rem 0;
+}
+
+h2 {
+	border-width: 0;
+	font-size: 2rem;
+}
+
+main {
+	font-size: 14px;
+}
+
+
+.button {
+	background: url('../img/bg.png');
+	border-top: 3px solid #036;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	margin: 0 0 0.5rem 0;
+	padding: 1rem;
+	width: 20rem;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+h2 {
+	margin-top: 0rem;
+	font-size: 2.6rem;
+}
+
+h3 {
+	color: #036;
+	font-size: 1.6rem;
+}
+
+main>article {
+	display: flex;
+}
+
+main>article>nav {
+	width: 25rem;
+}
+
+main>article>section {
+	flex: 1;
+}
+
+.controls {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 2rem;
+}
+
+.controls a {
+	background: #999;
+	border-top: 2px solid #666;
+	color: #333;
+	padding: 0.7rem;
+	cursor: pointer;
+	margin: 0 0.5rem;
+}
+
+.controls a:hover {
+	color: #fff;
+}
+
+.example {
+	display: flex;
+}
+

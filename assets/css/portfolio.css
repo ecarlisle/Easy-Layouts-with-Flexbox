@@ -1,0 +1,58 @@
+
+nav {
+  color: #FFF;
+  font: 1.5rem 'Architects Daughter', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  background: rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255,255,255,0.3); 
+  padding: 0.5rem 2rem;
+  margin: 0 0 0 0.3rem;
+}
+
+
+nav ul li a {
+  color: #fff;
+}
+
+main {
+  font: 1.5rem 'Lato', sans-serif;
+}
+
+p {
+  line-height: 2.0rem;
+  margin: 0 0 1rem;
+
+}
+
+
+ @media screen and (min-width: 768px) {
+
+  header, nav, article, footer {
+    width: 750px;
+  }
+
+  nav ul li {
+    background: none;
+    border: 0;
+  }
+
+  header {
+    text-align: left;
+  }
+  
+  .nav-wrapper {
+    background: rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255,255,255,0.3); 
+  }
+
+
+}
