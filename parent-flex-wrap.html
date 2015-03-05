@@ -20,14 +20,13 @@
     <main>
       <article>
         <nav>
-          <h3>Parent Properties</h3>
+          <h3>Parent Elements</h3>
           <a class="button" href="parent-flex-direction.html">flex-direction</a>
           <a class="button" href="parent-flex-wrap.html">flex-wrap</a>
-          <a class="button" href="parent-flex-flow.html">flex-flow</a>
           <a class="button" href="parent-justify-content.html">justify-content</a>
           <a class="button" href="parent-align-items.html">align-items</a>
           <a class="button" href="parent-align-content.html">align-content</a>
-          <h3>Child Properties</h3>
+          <h3>Child Elements</h3>
           <a class="button" href="parent-order.html">order</a>
           <a class="button" href="parent-flex-grow.html">flex-grow</a>
           <a class="button" href="parent-flex-shrink.html">flex-shrink</a>
@@ -36,12 +35,53 @@
           <a class="button" href="parent-align-self.html">align-self</a>
         </nav>
         <section>
+          <h2>Parent - Flex Direction</h2>
+          <div class="controls">
+            <span id="nowrap-button">nowrap</span>
+            <span id="wrap-button">wrap</span>
+            <span id="wrap-reverse-button">wrap-reverse</span>
+          </div>
+          <div class="example">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+          </div>
         </section>
       </article>
     </main>
     <footer>
       <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
     </footer>
+    <script type="text/javascript">
+      $(document).ready(function( ){
+          $('#nowrap-button').on('click',function(){
+            $('.example').css('flex-wrap','nowrap')
+          });
+          $('#wrap-button').on('click',function(){
+            $('.example').css('flex-wrap','wrap')
+          });
+          $('#wrap-reverse-button').on('click',function(){
+            $('.example').css('flex-wrap','wrap-reverse')
+          });
+      });
+    </script>
   </body>
 </html>
 <!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->

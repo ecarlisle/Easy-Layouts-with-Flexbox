@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="assets/css/examples.css">
     <link rel="stylesheet" href="assets/css/flexbox.css">
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
+    <style>
+      .example {
+        height: 35rem;
+        flex-wrap: wrap;
+      }
+      .example div {
+        padding: 1rem;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -35,12 +44,14 @@
           <a class="button" href="parent-align-self.html">align-self</a>
         </nav>
         <section>
-          <h2>Parent - Flex Direction</h2>
+          <h2>Parent - Align Content</h2>
           <div class="controls">
-            <span id="row-button">row</span>
-            <span id="row-reverse-button">row-reverse</span>
-            <span id="column-button">column</span>
-            <span id="column-reverse-button">column-reverse</span>
+            <span id="flex-start-button">flex-start</span>
+            <span id="flex-end-button">flex-end</span>
+            <span id="center-button">center</span>
+            <span id="stretch-button">stretch</span>
+            <span id="space-between-button">space-between</span>
+            <span id="space-around-button">space-around</span>
           </div>
           <div class="example">
             <div>1</div>
@@ -48,6 +59,41 @@
             <div>3</div>
             <div>4</div>
             <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+            <div>32</div>
+            <div>33</div>
+            <div>34</div>
+            <div>35</div>
+            <div>36</div>
+            <div>37</div>
+            <div>38</div>
+            <div>39</div>
+            <div>40</div>
           </div>
         </section>
       </article>
@@ -57,17 +103,25 @@
     </footer>
     <script type="text/javascript">
       $(document).ready(function( ){
-          $('#row-button').on('click',function(){
-            $('.example').css('flex-direction','row')
+          $('#flex-start-button').on('click',function(){
+            $('.example').css('align-content','flex-start')
           });
-          $('#row-reverse-button').on('click',function(){
-            $('.example').css('flex-direction','row-reverse')
+          $('#flex-end-button').on('click',function(){
+            $('.example').css('align-content','flex-end')
           });
-          $('#column-button').on('click',function(){
-            $('.example').css('flex-direction','column')
+          $('#center-button').on('click',function(){
+            $('.example').css('align-content','center')
           });
-          $('#column-reverse-button').on('click',function(){
-            $('.example').css('flex-direction','column-reverse')
+          $('#stretch-button').on('click',function(){
+            $('.example').css('align-content','stretch')
+          });
+          $('#space-between-button').on('click',function(){
+            $('.example').css('align-content','space-between')
+            console.log('sb');
+          });
+          $('#space-around-button').on('click',function(){
+            $('.example').css('align-content','space-around')
+            console.log('sa');
           });
       });
     </script>

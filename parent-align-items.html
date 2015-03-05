@@ -12,6 +12,36 @@
     <link rel="stylesheet" href="assets/css/examples.css">
     <link rel="stylesheet" href="assets/css/flexbox.css">
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
+    <style>
+      .example { height: 30rem }
+      /*
+      #e1 { 
+        font-size: 40px; 
+        padding: 20px 10px 10px; 
+        margin: 0 20px;
+      }
+      #e2 { 
+        font-size: 60px; 
+        padding: 10px 20px 20px; 
+        margin: 10px 10px;
+      }
+      #e3 { 
+        font-size: 20px; 
+        padding: 30px 20px 40px; 
+        margin: 50px 10px 40px 10px;
+      }
+      #e4 { 
+        font-size: 50px; 
+        padding: 50px 20px 40px; 
+        margin: 40px 10px 60px 10px;
+      }
+      #e5 { 
+        font-size: 70px; 
+        padding: 30px 20px 20px; 
+        margin: 40px 10px 30px 10px;
+      }
+      */
+    </style>
   </head>
   <body>
     <header>
@@ -20,14 +50,13 @@
     <main>
       <article>
         <nav>
-          <h3>Parent Properties</h3>
+          <h3>Parent Elements</h3>
           <a class="button" href="parent-flex-direction.html">flex-direction</a>
           <a class="button" href="parent-flex-wrap.html">flex-wrap</a>
-          <a class="button" href="parent-flex-flow.html">flex-flow</a>
           <a class="button" href="parent-justify-content.html">justify-content</a>
           <a class="button" href="parent-align-items.html">align-items</a>
           <a class="button" href="parent-align-content.html">align-content</a>
-          <h3>Child Properties</h3>
+          <h3>Child Elements</h3>
           <a class="button" href="parent-order.html">order</a>
           <a class="button" href="parent-flex-grow.html">flex-grow</a>
           <a class="button" href="parent-flex-shrink.html">flex-shrink</a>
@@ -36,12 +65,46 @@
           <a class="button" href="parent-align-self.html">align-self</a>
         </nav>
         <section>
+          <h2>Parent - Align Items</h2>
+          <div class="controls">
+            <span id="flex-start-button">flex-start</span>
+            <span id="flex-end-button">flex-end</span>
+            <span id="center-button">center</span>
+            <span id="stretch-button">stretch</span>
+            <span id="baseline-button">baseline</span>
+          </div>
+          <div class="example">
+            <div id="e1">1</div>
+            <div id="e2">2</div>
+            <div id="e3">3</div>
+            <div id="e4">4</div>
+            <div id="e5">5</div>
+          </div>
         </section>
       </article>
     </main>
     <footer>
       <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
     </footer>
+    <script type="text/javascript">
+      $(document).ready(function( ){
+          $('#flex-start-button').on('click',function(){
+            $('.example').css('align-items','flex-start');
+          });
+          $('#flex-end-button').on('click',function(){
+            $('.example').css('align-items','flex-end');
+          });
+          $('#center-button').on('click',function(){
+            $('.example').css('align-items','center');
+          });
+          $('#stretch-button').on('click',function(){
+            $('.example').css('align-items','stretch');
+          });
+          $('#baseline-button').on('click',function(){
+            $('.example').css('align-items','baseline');
+          });
+      });
+    </script>
   </body>
 </html>
 <!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
