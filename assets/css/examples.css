@@ -52,7 +52,9 @@ main>article>section {
 .controls {
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 	margin-bottom: 3rem;
+	line-height: 18px;
 }
 
 .controls span {
@@ -60,7 +62,7 @@ main>article>section {
 	border: 1px solid #999;
 	padding: 0.7rem;
 	cursor: pointer;
-	margin: 0 0.5rem;
+	margin: 0 0.5rem 1rem;
 }
 
 .controls a:hover {
