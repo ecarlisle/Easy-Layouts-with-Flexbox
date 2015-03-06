@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>Ridiculously Easy Layouts with Flexbox</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/normalize.css/normalize.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/examples.css">
+    <link rel="stylesheet" href="assets/css/flexbox.css">
+    <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
+    <style>
+    .examples {
+      justify-content: space-between;
+    }
+
+    .example div {
+      font-size: 15px;
+      padding: 1rem;
+      text-align: left;
+      flex-basis: 0;
+
+    }
+
+    .grow-content {
+      display: block;
+      padding: 1rem 0;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ridiculously Easy Layouts with Flexbox</h1>
+    </header>
+    <main>
+      <article>
+        <nav>
+          <h3>Parent Properties</h3>
+          <a class="button" href="parent-flex-direction.html">flex-direction</a>
+          <a class="button" href="parent-flex-wrap.html">flex-wrap</a>
+          <a class="button" href="parent-justify-content.html">justify-content</a>
+          <a class="button" href="parent-align-items.html">align-items</a>
+          <a class="button" href="parent-align-content.html">align-content</a>
+          <h3>Child Properties</h3>
+          <a class="button" href="child-order.html">order</a>
+          <a class="button" href="child-flex-grow.html">flex-grow</a>
+          <a class="button" href="child-flex-shrink.html">flex-shrink</a>
+          <a class="button" href="child-flex-basis.html">flex-basis</a>
+          <a class="button" href="child-flex.html">flex</a>
+          <a class="button" href="child-align-self.html">align-self</a>
+        </nav>
+        <section>
+          <h2>Child - Flex Shrink</h2>
+          <div class="controls">
+            <span id="s111">1 1 1</span>
+            <span id="s113">1 1 3</span>
+            <span id="s123">1 2 3</span>
+            <span id="s321">3 2 1</span>
+          </div>
+          <div class="example">
+            <div id="content1" style="flex-shrink: 1">
+              <p>A long time ago, in a galaxy far, far away....</p>
+              <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
+              <p>During the battle, rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
+              <p>Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy....</p>
+            </div>
+            <div id="content2" style="flex-shrink: 1">
+              <p>It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.</p>
+              <p>Evading the dreaded Imperial Starfleet, a group of freedom fighters led by Luke Skywalker has established a new secret base on the remote ice world of Hoth.</p>
+              <p>The evil lord Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into the far reaches of space....</p>
+            </div>
+            <div id="content3" style="flex-shrink: 1">
+              <p>Luke Skywalker has returned to his home planet of Tatooine in an attempt to rescue his friend Han Solo from the clutches of the vile gangster Jabba the Hutt.</p>
+              <p>Little does Luke know that the GALACTIC EMPIRE has secretly begun construction on a new armored space station even more powerful than the first dreaded Death Star.</p>
+              <p>When completed, this ultimate weapon will spell certain doom for the small band of rebels struggling to restore freedom to the galaxy...</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
+    </footer>
+    <script type="text/javascript">
+      $(document).ready(function( ){
+        $('#g111').on('click',function(){
+          console.log('ok');
+          $('#content1').css('flex-shrink','1');
+          $('#content2').css('flex-shrink','1');
+          $('#content3').css('flex-shrink','1');
+        });
+
+        $('#g113').on('click',function(){
+          console.log('ok2');
+          $('#content1').css('flex-shrink','1');
+          $('#content2').css('flex-shrink','1');
+          $('#content3').css('flex-shrink','3');
+        });
+
+        $('#g123').on('click',function(){
+          $('#content1').css('flex-shrink','1');
+          $('#content2').css('flex-shrink','2');
+          $('#content3').css('flex-shrink','3');
+        });
+
+        $('#g321').on('click',function(){
+          $('#content1').css('flex-shrink','3');
+          $('#content2').css('flex-shrink','2');
+          $('#content3').css('flex-shrink','1');
+        });
+      });
+    </script>
+  </body>
+</html>
+<!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
+<!-- Divs are now just for additional formatting not pertaining to content -->
+<!-- Div - generic container -->

@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="assets/css/examples.css">
     <link rel="stylesheet" href="assets/css/flexbox.css">
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
-    <style type="text/cs">
-      .example>div {
-        justify-content: flex-start;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -40,13 +35,9 @@
           <a class="button" href="child-align-self.html">align-self</a>
         </nav>
         <section>
-          <h2>Parent - Flex Direction</h2>
+          <h2>Child - Order</h2>
           <div class="controls">
-            <span id="flex-start-button">flex-start</span>
-            <span id="flex-end-button">flex-end</span>
-            <span id="center-button">center</span>
-            <span id="space-between-button">space-between</span>
-            <span id="space-around-button">space-around</span>
+            <span id="randomize-button">Randomize Order</span>
           </div>
           <div class="example">
             <div>1</div>
@@ -62,23 +53,12 @@
       <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
     </footer>
     <script type="text/javascript">
-      $(document).ready(function(){
-          $('#flex-start-button').on('click',function(){
-            $('.example').css('justify-content','flex-start')
-          });
-          $('#flex-end-button').on('click',function(){
-            $('.example').css('justify-content','flex-end')
-          });
-          $('#center-button').on('click',function(){
-            $('.example').css('justify-content','center')
-          });
-          $('#space-between-button').on('click',function(){
-            $('.example').css('justify-content','space-between')
-            console.log('sb');
-          });
-          $('#space-around-button').on('click',function(){
-            $('.example').css('justify-content','space-around')
-            console.log('sa');
+      $(document).ready(function( ){
+          $('#randomize-button').on('click',function(){
+            $('.example div').each(function(){
+              $(this).css('order', Math.floor(Math.random() * 5));
+
+            });
           });
       });
     </script>
