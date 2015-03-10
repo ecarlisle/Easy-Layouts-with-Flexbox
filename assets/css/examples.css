@@ -8,9 +8,12 @@ h2 {
 }
 
 main {
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
+input[type=radio] {
+	margin: 1rem 0 0 0;
+}
 
 .button {
 	background: url('../img/bg.png');
@@ -51,14 +54,14 @@ main>article>section {
 
 .controls {
 	display: flex;
-	justify-content: flex-start;
+  justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: 3rem;
 	line-height: 18px;
 }
 
 .controls span {
-	background: linear-gradient(to bottom, #BBB 0%,#CCC 100%);	
+	background: linear-gradient(to bottom, #BBB 0%,#CCC 100%);
 	border: 1px solid #999;
 	padding: 0.7rem;
 	cursor: pointer;

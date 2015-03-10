@@ -18,6 +18,12 @@
         height: 300px;
       }
 
+      #e3 {
+        height: 100px;
+        width: 80px;
+        padding: 1rem 0 3rem;
+        margin: 2rem 0 1rem;
+      }
     </style>
   </head>
   <body>
@@ -42,16 +48,18 @@
         <section>
           <h2>Child - Order</h2>
           <div class="controls">
-            <span id="flex-start-button">flex-start</span>
-            <span id="flex-end-button">flex-end</span>
-            <span id="center-button">center</span>
-            <span id="stretch-button">stretch</span>
-            <span id="baseline-button">baseline</span>
+            <div>
+              <span id="flex-start-button">flex-start</span>
+              <span id="flex-end-button">flex-end</span>
+              <span id="center-button">center</span>
+              <span id="stretch-button">stretch</span>
+              <span id="baseline-button">baseline</span>
+            </div>
           </div>
           <div class="example">
             <div>1</div>
             <div>2</div>
-            <div id="three">3</div>
+            <div id="e3">3</div>
             <div>4</div>
             <div>5</div>
           </div>
@@ -64,19 +72,19 @@
     <script type="text/javascript">
       $(document).ready(function( ){
           $('#flex-start-button').on('click',function(){
-            $('#three').css('align-self','flex-start');
+            $('#e3').css('align-self','flex-start');
           });
           $('#flex-end-button').on('click',function(){
-            $('#three').css('align-self','flex-end');
+            $('#e3').css('align-self','flex-end');
           });
           $('#center-button').on('click',function(){
-            $('#three').css('align-self','center');
+            $('#e3').css('align-self','center');
           });
           $('#stretch-button').on('click',function(){
-            $('#three').css('align-self','stretch');
+            $('#e3').css('align-self','stretch');
           });
           $('#baseline-button').on('click',function(){
-            $('#three').css('align-self','baseline');
+            $('#e3').css('align-self','baseline');
           });
       });
     </script>

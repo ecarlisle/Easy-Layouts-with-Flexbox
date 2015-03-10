@@ -1,6 +1,6 @@
 header, nav, article, footer {
   margin: 0 auto;
-} 
+}
 
 .social {
   display: flex;
@@ -20,10 +20,6 @@ header, nav, article, footer {
     display: flex;
   }
 
-
-  /* Workaround for Chrome bug */
-  /* nav ul li { grow: 1; }*/
-
 }
 
 @media screen and (min-width: 992px) {
@@ -32,9 +28,6 @@ header, nav, article, footer {
   nav ul {
     justify-content: flex-end;
   }
-
-  /* Workaround for Chrome (bug) */
-  /* nav ul li { grow: 0; } */
 
   .flex-container {
     display: flex;

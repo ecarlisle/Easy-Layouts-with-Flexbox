@@ -6,7 +6,7 @@ body {
   background: url('../img/bg.png');
   color: #444;
   margin: 0;
-  padding: 0;   
+  padding: 0;
 }
 
 main {
@@ -87,13 +87,15 @@ header span {
 
 @media screen and (min-width: 992px) {
 
+  /*
   header, nav, article, footer {
     width: 970px;
   }
+  */
 
   nav ul li {
     background: rgba(255,255,255,0.15);
-    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-top: 1px solid rgba(255,255,255,0.3);
   }
 
   .nav-wrapper {

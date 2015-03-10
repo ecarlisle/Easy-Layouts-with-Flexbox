@@ -13,31 +13,31 @@
     <link rel="stylesheet" href="assets/css/flexbox.css">
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
     <style>
-      .example { height: 30rem }
+      .example { min-height: 30rem }
       /*
-      #e1 { 
-        font-size: 40px; 
-        padding: 20px 10px 10px; 
+      #e1 {
+        font-size: 40px;
+        padding: 20px 10px 10px;
         margin: 0 20px;
       }
-      #e2 { 
-        font-size: 60px; 
-        padding: 10px 20px 20px; 
+      #e2 {
+        font-size: 60px;
+        padding: 10px 20px 20px;
         margin: 10px 10px;
       }
-      #e3 { 
-        font-size: 20px; 
-        padding: 30px 20px 40px; 
+      #e3 {
+        font-size: 20px;
+        padding: 30px 20px 40px;
         margin: 50px 10px 40px 10px;
       }
-      #e4 { 
-        font-size: 50px; 
-        padding: 50px 20px 40px; 
+      #e4 {
+        font-size: 50px;
+        padding: 50px 20px 40px;
         margin: 40px 10px 60px 10px;
       }
-      #e5 { 
-        font-size: 70px; 
-        padding: 30px 20px 20px; 
+      #e5 {
+        font-size: 70px;
+        padding: 30px 20px 20px;
         margin: 40px 10px 30px 10px;
       }
       */
@@ -65,11 +65,20 @@
         <section>
           <h2>Parent - Align Items</h2>
           <div class="controls">
-            <span id="flex-start-button">flex-start</span>
-            <span id="flex-end-button">flex-end</span>
-            <span id="center-button">center</span>
-            <span id="stretch-button">stretch</span>
-            <span id="baseline-button">baseline</span>
+            <div>
+              <span id="flex-start-button">flex-start</span>
+              <span id="flex-end-button">flex-end</span>
+              <span id="center-button">center</span>
+              <span id="stretch-button">stretch</span>
+              <span id="baseline-button">baseline</span>
+            </div>
+            <form>
+              <strong>Flex Direction:</strong>
+              <br/>
+              <input type="radio" name="direction" value="row" checked="checked" /> Row
+              <br/>
+              <input type="radio" name="direction" value="column" /> Column
+            </form>
           </div>
           <div class="example">
             <div id="e1">1</div>
@@ -101,6 +110,15 @@
           $('#baseline-button').on('click',function(){
             $('.example').css('align-items','baseline');
           });
+
+          $("input[name='direction']").on('change',function(){
+            if ($(this).val() === "row") {
+              $('.example').css('flex-direction','row');
+            } else {
+              $('.example').css('flex-direction','column');
+            }
+          });
+
       });
     </script>
   </body>
