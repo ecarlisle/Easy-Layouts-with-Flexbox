@@ -14,24 +14,10 @@
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Ridiculously Easy Layouts with Flexbox</h1>
-    </header>
+    <header></header>
     <main>
       <article>
-        <nav>
-          <h3>Parent Properties</h3>
-          <a class="button" href="parent-flex-direction.html">flex-direction</a>
-          <a class="button" href="parent-flex-wrap.html">flex-wrap</a>
-          <a class="button" href="parent-justify-content.html">justify-content</a>
-          <a class="button" href="parent-align-items.html">align-items</a>
-          <a class="button" href="parent-align-content.html">align-content</a>
-          <h3>Child Properties</h3>
-          <a class="button" href="child-order.html">order</a>
-          <a class="button" href="child-flex-grow.html">flex-grow</a>
-          <a class="button" href="child-flex-shrink.html">flex-shrink</a>
-          <a class="button" href="child-align-self.html">align-self</a>
-        </nav>
+        <nav></nav>
         <section>
           <h2>Child - Order</h2>
           <div class="controls">
@@ -47,21 +33,16 @@
         </section>
       </article>
     </main>
-    <footer>
-      <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
-    </footer>
-    <script type="text/javascript">
-      $(document).ready(function( ){
-          $('#randomize-button').on('click',function(){
-            $('.example div').each(function(){
-              $(this).css('order', Math.floor(Math.random() * 5));
-
-            });
+    <footer></footer>
+    <script>
+      $(document).ready(function(){
+        $('#randomize-button').on('click',function(){
+          $('.example div').each(function(){
+            $(this).css('order', Math.floor(Math.random() * 5));
           });
+        });
       });
     </script>
+    <script src="assets/js/examples.js"></script>
   </body>
 </html>
-<!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
-<!-- Divs are now just for additional formatting not pertaining to content -->
-<!-- Div - generic container -->

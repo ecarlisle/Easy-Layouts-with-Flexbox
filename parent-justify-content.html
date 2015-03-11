@@ -14,24 +14,10 @@
     <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Ridiculously Easy Layouts with Flexbox</h1>
-    </header>
+    <header></header>
     <main>
       <article>
-        <nav>
-          <h3>Parent Properties</h3>
-          <a class="button" href="parent-flex-direction.html">flex-direction</a>
-          <a class="button" href="parent-flex-wrap.html">flex-wrap</a>
-          <a class="button" href="parent-justify-content.html">justify-content</a>
-          <a class="button" href="parent-align-items.html">align-items</a>
-          <a class="button" href="parent-align-content.html">align-content</a>
-          <h3>Child Properties</h3>
-          <a class="button" href="child-order.html">order</a>
-          <a class="button" href="child-flex-grow.html">flex-grow</a>
-          <a class="button" href="child-flex-shrink.html">flex-shrink</a>
-          <a class="button" href="child-align-self.html">align-self</a>
-        </nav>
+        <nav></nav>
         <section>
           <h2>Parent - Justify Content</h2>
           <div class="controls">
@@ -60,38 +46,27 @@
         </section>
       </article>
     </main>
-    <footer>
-      <a href="http://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>.
-    </footer>
+    <footer></footer>
     <script type="text/javascript">
       $(document).ready(function(){
-
-          $('#flex-start-button').on('click',function(){
-            $('.example').css('justify-content','flex-start')
-          });
-          $('#flex-end-button').on('click',function(){
-            $('.example').css('justify-content','flex-end')
-          });
-          $('#center-button').on('click',function(){
-            $('.example').css('justify-content','center')
-          });
-          $('#space-between-button').on('click',function(){
-            $('.example').css('justify-content','space-between')
-          });
-          $('#space-around-button').on('click',function(){
-            $('.example').css('justify-content','space-around')
-          });
-
-          $("input[name='direction']").on('change',function(){
-            if ($(this).val() === "row") {
-              $('.example').css('flex-direction','row');
-            } else {
-              $('.example').css('flex-direction','column');
-            }
-          });
-
+        $('#flex-start-button').on('click',function(){
+          $('.example').css('justify-content','flex-start')
+        });
+        $('#flex-end-button').on('click',function(){
+          $('.example').css('justify-content','flex-end')
+        });
+        $('#center-button').on('click',function(){
+          $('.example').css('justify-content','center')
+        });
+        $('#space-between-button').on('click',function(){
+          $('.example').css('justify-content','space-between')
+        });
+        $('#space-around-button').on('click',function(){
+          $('.example').css('justify-content','space-around')
+        });
       });
     </script>
+    <script src="assets/js/examples.js"></script>
   </body>
 </html>
 <!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->

@@ -1,3 +1,6 @@
+header {
+  text-align: center;
+}
 
 nav {
   color: #FFF;
@@ -8,16 +11,14 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 nav ul li {
   background: rgba(255,255,255,0.15);
   border-top: 1px solid rgba(255,255,255,0.3); 
-  padding: 0.5rem 2rem;
-  margin: 0 0 0 0.3rem;
+  padding: 0.6rem;
+  text-align: center;
 }
-
 
 nav ul li a {
   color: #fff;
@@ -34,25 +35,3 @@ p {
 }
 
 
- @media screen and (min-width: 768px) {
-
-  header, nav, article, footer {
-    width: 750px;
-  }
-
-  nav ul li {
-    background: none;
-    border: 0;
-  }
-
-  header {
-    text-align: left;
-  }
-  
-  .nav-wrapper {
-    background: rgba(255,255,255,0.15);
-    border-top: 1px solid rgba(255,255,255,0.3); 
-  }
-
-
-}
