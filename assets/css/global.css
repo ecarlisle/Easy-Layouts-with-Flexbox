@@ -81,13 +81,10 @@ header span {
   padding: 0 1.6rem;
 }
 
-.social {
-  margin: 1.5rem 0 0 0;
+section {
+  padding: 0 1rem;
 }
 
-.social-icon {
-  margin: 0.5rem 1rem;
-}
 
 @media screen and (min-width: 1200px) {
 

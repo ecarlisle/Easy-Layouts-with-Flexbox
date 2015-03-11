@@ -1,0 +1,83 @@
+/* 1 */
+header, article, nav, footer {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* 2 */
+  header {
+    text-align: left;
+  }
+
+  /* 3 */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* 3 */
+  nav ul li {
+    background: none;
+    border-top: none;
+  }
+
+  /* 3 */
+  .nav-wrapper {
+    background: rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255,255,255,0.3); 
+  }
+
+  /* 5 */
+  article.skills section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  /* 6 */
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  /* 3 */
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  /* 3 */
+  nav ul li {
+    background: rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    margin: 0 0.5rem;
+    padding: 0.6rem 2rem;
+  }
+  
+  /* 3 */
+  .nav-wrapper {
+    background: none;
+    border-top: none;
+  }
+
+  /* 4 */
+  article.what-i-do > div {
+    display: flex;
+  }
+
+  /* 5 */
+  article.skills > div {
+    display: flex;
+  }
+
+  /* 6 */
+  .social {
+    justify-content: space-between;
+  }
+
+}

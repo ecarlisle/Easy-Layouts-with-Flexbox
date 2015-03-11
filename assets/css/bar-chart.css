@@ -1,10 +1,27 @@
 body {
   padding-top: 30px;
   font: 12px sans-serif;
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
   font: bold 20px sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .chart {

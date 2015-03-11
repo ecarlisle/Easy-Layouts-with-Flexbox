@@ -10,33 +10,15 @@
       <link rel="stylesheet" href="assets/css/bar-chart.css">
 
       <style type="text/css">
-        body {
-          display: flex;
-          justify-content: space-around;
-        }
-
-        .row {
-          display: flex;
-          /* flex-direction: row; */
-        }
-
-        .column {
-          display: flex;
-          flex-direction: column;
-        }
 
         .chart-body {
           height: 400px;
           width: 400px;
           border: solid 1px #333;
           border-width: 0 0 1px 1px;
-
           display: flex;
-
-          align-items: flex-end;
-
           justify-content: space-around;
-
+          align-items: flex-end;
         }
 
         .bar {
@@ -56,9 +38,9 @@
         }
 
         .y-tic {
+          border-top: solid 1px #333;
           height: 49px;
           width: 10px;
-          border-top: solid 1px #333;
           padding-right: 15px;
           line-height: 2;
           text-align: right;
@@ -94,9 +76,9 @@
           <div class="y-tic">0</div>
         </div>  
 
-        <div class="column" style="solid 1px red">
-          <div class="chart-body"> <!-- 1 -->
-            <div class="bar"><!-- 2 -->
+        <div class="column">
+          <div class="chart-body"> 
+            <div class="bar">
               <div>300</div>
               <div class="bg-red" style="height: 100px">100</div>
               <div class="bg-yellow" style="height: 100px">100</div>
@@ -119,8 +101,8 @@
               <div class="bg-red" style="height: 75px">75</div>
               <div class="bg-yellow" style="height: 75px">75</div>
               <div class="bg-green" style="height: 75px">75</div>
-            </div><!-- /2 -->
-          </div><!--- /1 -->
+            </div>
+          </div>
 
             <!-- Options - child order or row-reverse -->
             <div class="x-axis">
@@ -131,11 +113,6 @@
             </div>
         </div>
       </div>
-    
     </div>
-
   </body>
 </html>
-<!-- Stay out of divland - allows us to be semantic (but we still use divs as containers or specialized containers) -->
-<!-- Divs are now just for additional formatting not pertaining to content -->
-<!-- Div - generic container -->

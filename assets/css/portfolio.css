@@ -1,3 +1,8 @@
+article p {
+  line-height: 1.5;
+}
+
+
 header {
   text-align: center;
 }
@@ -31,7 +36,14 @@ main {
 p {
   line-height: 2.0rem;
   margin: 0 0 1rem;
+}
 
+.social {
+  margin: 1.5rem 0 0 0;
+}
+
+.social-icon {
+  margin: 0.2rem;
 }
 
 
